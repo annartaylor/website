@@ -40,7 +40,7 @@
 						<div class="inner">
 							<header class="align-center">
 								<h1>Vela X-1 Wind Accretion Project</h1>
-								<p>An overview of the work I am currently doing with the Blondin Research Group</p>
+								<p>An overview of the work I have done the Blondin Research Group</p>
 							</header>
 							<div class="flex flex-2">
 								<div class="col col2">
@@ -48,11 +48,49 @@
 								</div>
 </div>
 
-<p> A high-mass X-ray binary (HMXB) is a close binary system that consists of two stars that are gravitationally bound, one of which is a white dwarf or neutron star (or more rarely a black hole) and is accreting matter from what is usually a main-sequence star that has a mass greater than ten solar masses. The companion is generally an O or B type star, emitting a stellar wind driven by radiation pressure. In the case of Vela X-1 the companion star is a blue supergiant and the primary star is a neutron star. Mass transfer to the neutron star or black hole does not proceed via Roche-lobe overflow into an accretion disk, as is the case for a low-mass X-ray binary, but rather through the capture of this stellar wind directly onto the compact object. Roche-lobe overflow occurs when the teardrop-shaped space that defines the region where the material is bound to the star by gravity becomes too full. Depending on its initial location, energy, and momentum, the material pushed outside the Roche-lobe of a star may either escape the system completely, orbit both stars or fall onto the binary companion. However, in our case, we investigate wind accretion, which happens by the gravitational capture of stellar wind coming off the main-sequence star by the compact object, rather than mass from Roche-lobe overflow.</p>
+<p> A high-mass X-ray binary (HMXB) is a close binary system that consists of two stars that are gravitationally bound, 
+	one of which is a white dwarf or neutron star (or more rarely a black hole) and is accreting matter from what is usually a 
+	main-sequence star that has a mass greater than ten solar masses. The companion is generally an O or B type star, emitting a 
+	stellar wind driven by radiation pressure. In the case of Vela X-1 the companion star is a blue supergiant and the primary star is a 
+	neutron star. Mass transfer to the neutron star or black hole does not proceed via Roche-lobe overflow into an accretion disk, as is the 
+	case for a low-mass X-ray binary, but rather through the capture of this stellar wind directly onto the compact object. Roche-lobe overflow 
+	occurs when the teardrop-shaped space that defines the region where the material is bound to the star by gravity becomes too full. Depending on its
+	 initial location, energy, and momentum, the material pushed outside the Roche-lobe of a star may either escape the system completely, orbit both 
+	 stars or fall onto the binary companion. However, in our case, we investigate wind accretion, which happens by the gravitational capture of stellar wind 
+	 coming off the main-sequence star by the compact object, rather than mass from Roche-lobe overflow.</p>
 
-<h3>3D Results</h3>
+<h3>3D Results - Wind Structure</h3>
 
-						<p> Here are some images of the results of the 3D Vela X-1 Simulations. Shown is the results of the wind flow onto the accretor. The first image shows the Deep (spherical) Roche Lobe Companion star geometry with the fast wind speed. This model closely resembles the typical Bondi-Hoyle-Lyttleton accretion as can be seen in the defined bow shock. The other two images show the accretion disks formed by the Close (full) Roche Lobe companion star geomtry with the fast and then slow wind speed. These results follow out prediction that wind coming off a star with a more full Roche Lobe would be more likley to form an accretion disk. You can see that for the slow wind run that the wind in the accretion disk seems to be rotating faster than the wind in the fast wind run, which might be due to more gained angular momentum.</p>
+						<p> Here are some images of the results of the 3D Vela X-1 Simulations. Shown is the results of the wind flow onto the accretor. Each simulation is labeled by two letters. The first letter represents the level the Roche lobe is 
+							filled C = close (very close to fillinh Roche lobe), I = intermediate (between not filling and full), D = deep (a nearly spherical primary star geometry). The second letter represents the wind speed where S = slow (700 km/s) 
+							and F = fast (1600 km/s).  Streamlines in the equatorial plane showing the global wind dynamics of each simulation. The
+							effects of orbital motion are more pronounced in the slow wind models, and in the extreme case of the Slow
+							Close model much of the wind in the equatorial plane does not escape the system. Each model is shown at
+							the same physical scale, with the differences in radial extent of the computational grids arising from slight
+							variations in the radial gridding tailored for each model. 
+						</p>
+						<div class="col col3 first">
+							<div class="image square fit">
+									<a href="generic.html" class="link"><img src="images/WindTrajectory.png" alt="" /></a>
+
+
+</div>
+</div>
+								
+		<section class="wrapper">
+						<div class="inner">
+
+						<div class="inner">
+													
+								
+					<h3>3D Results - Accretion Dynamics</h3>
+
+						<p> The dynamics of the accretion flow onto the neutron star companion fell into three different categories.  The DF and IF simulations, due to their 
+							fast wind and correspondingly small accretion radius, possess the most uniform upstream flow and accrete via a quasi-steady bowshock as in idealized Hoyle-Lyttleton accretion models.  
+							The DS and IS simulations have larger upstream gradients due to their slower wind speeds, and while they do form an accretion bowshock, the postshock flow forms a thin accretion disk.  We refer to this accretion mode as wind disk accretion.  
+							Finally, both simulations with a primary star close to the critical potential (CF and CS simulations) are dominated by a Roche Lobe Overflow tidal stream along the line of centers that feeds directly into an accretion disk. Left: Wind accretion bow shock in the Deep Fast model in the equatorial plane.
+							Middle: Visualization of the wind accretion disk and the bow shock formed in the IS Simulation. Right: Tidally enhanced wind feeding into a quasi-steady accretion disk in the CF model.
+						</p>
 							</header>
 							<div class="flex flex-3">
 								<div class="col align-center">
@@ -63,49 +101,14 @@
 </div>
 								<div class="col align-center">
 									<div class="image square fit">
-										<img src="images/CFdisk.png" alt="" />
+										<img src="images/DSdisk.png" alt="" />
 									</div>
 									<p> </p>
 									
 								</div>
 								<div class="col">
 									<div class="image square fit">
-									    <center><img src="images/CSdisk.png" alt="" />
-										
-									</div>
-									<p> </p>
-									
-								</div>
-							</div>
-						</div>
-								
-		<section class="wrapper">
-						<div class="inner">
-
-						<div class="inner">
-													
-								
-					<h3>Companion star in 3D!</h3>
-
-						<p> These are some finsihed star 1 (companion star) runs in 3D! These were run using the fast wind profile with a deep, intrm, and close Roche Lobe geometry. The slow wind runs are still being run. Note the difference in scale.</p>
-							</header>
-							<div class="flex flex-3">
-								<div class="col align-center">
-									<div class="image square fit">
-										<img src="images/DeepFastPic.jpg" alt="" />
-									</div>
-									<p> </p>
-</div>
-								<div class="col align-center">
-									<div class="image square fit">
-										<img src="images/IntrmFastPic.jpg" alt="" />
-									</div>
-									<p> </p>
-									
-								</div>
-								<div class="col">
-									<div class="image square fit">
-									    <center><img src="images/CloseFastPic.jpg" alt="" />
+									    <center><img src="images/CFdiskisosurface.png" alt="" />
 										
 									</div>
 									<p> </p>
