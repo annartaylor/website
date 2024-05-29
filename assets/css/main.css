@@ -3107,7 +3107,7 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #330066;
+			background-color: #A90071;
 			color: #aed6f1;
 		}
 
@@ -3154,7 +3154,7 @@
 			.wrapper.style2 button,
 			.wrapper.style2 .button {
 				background-color: #fff;
-				color: #330066 !important;
+				color: #A90071 !important;
 			}
 
 				.wrapper.style2 input[type="submit"].alt,
@@ -3319,7 +3319,7 @@
 			}
 
 			.wrapper.style2 .image {
-				box-shadow: 0px 0px 0px 7px #330066, 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
+				box-shadow: 0px 0px 0px 7px #fff, 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3705,7 +3705,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("../../images/pinkplanets.webp");
+		background-image: url("../../images/pinkgal.jpeg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
