@@ -41,21 +41,38 @@
 					<section class="wrapper">
 						<div class="inner">
 							<header class="align-center">
-								<h1>Atmospheric Escape Project</h1>
-								<p>Overview of the research I am doing with my advisor Tommi Koskinen as a Graduate Student at the Lunar and Planetary Lab</p>
-							</header>
-							<div class="flex flex-2">
-							
-							<h3>Understanding the Helium absorption on Hot Jupiter exoplanets</h3>								
-								<p> Understanding atmospheric escape is essential for insights into exoplanet demographics, habitability, and star-planet interactions. Hot Jupiters and Neptunes, 
-									due to their proximity to host stars, are ideal candidates for studying these escape mechanisms. Observations of the He I 10830 Å line, which indicates escaping helium, 
-									show variability in absorption patterns, complicating correlations with mass loss rates. Current models, which often lack detailed energy balance and species chemistry,
-									have not fully addressed these complexities. We employ a 1D thermosphere-ionosphere and hydrodynamic escape model, which is more suited for modeling He I (2³S) and H I Balmer 
-									lines than the simpler Parker wind models. This model is iteratively integrated with established lower/middle atmosphere models to ensure accuracy. We also use a radiative 
-									transfer model to calculate transit depths for H I and He I lines, factoring in various atmospheric conditions.Our research highlights significant gaps in the existing models’ 
-									excitation chemistry for He I (2³S). By collaborating with experts to generate new high-resolution photoionization cross-sections and updating critical reaction rates, 
-									we have developed more accurate models for the He I 10830 Å line formation. We have applied this model to the archetype Hot Jupiter HD209458b and have very interesting reuslts to share.
-									A paper should be coming out soon!</p>
+								<h1>Current Research</h1>
+								I study the upper atmospheres of exoplanets, with a focus on how stellar radiation and atmospheric composition drive atmospheric escape. I am particularly interested in helium and hydrogen spectral lines, which allow us to observe atmospheric outflows during planetary transits. 
+
+My recent work, published in <i>ApJ</i>, presents a self-consistent model of HD209458b’s full atmosphere, combining a time-dependent, multi-species hydrodynamic escape code with a photochemical model of the lower and middle atmosphere. We updated key atomic processes and explored how the observed helium and hydrogen absorption signals vary with changes in stellar activity, eddy diffusion, and metallicity. Our results demonstrate that metastable helium is sensitive to these conditions in different ways than hydrogen, highlighting the diagnostic power of combining multiple spectral lines.
+
+You can read the full paper <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250608232T/abstract" target="_blank">here</a>.</p>
+
+<p>Below are example outputs from our model showing how the predicted metastable helium transit depths vary across a range of conditions. Each row of plots shows results for one parameter sweep: stellar activity level, eddy diffusion coefficient, and metal abundance, from left (lowest) to right (highest).</p>
+
+<header>
+<p>Metastable helium absorption profiles showing variation with key atmospheric parameters.</p>
+</header>
+<div class="flex flex-3">
+    <div class="col align-center">
+        <div class="image square fit">
+            <img src="images/stellaratv.png" alt="Stellar activity" />
+        </div>
+        <p>Low stellar activity</p>
+    </div>
+    <div class="col align-center">
+        <div class="image square fit">
+            <img src="images/kzz.png" alt="Diffusion" />
+        </div>
+        <p>Medium eddy diffusion</p>
+    </div>
+    <div class="col">
+        <div class="image square fit">
+            <img src="images/metaltd.png" alt="Metallicity" />
+        </div>
+        <p>High metallicity</p>
+    </div>
+</div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
