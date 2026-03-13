@@ -187,6 +187,87 @@
                                                 </div>
                                         </section>
 
+<!-- Nav Tiles Section -->
+<section class="wrapper style1">
+	<div class="inner">
+		<header class="align-center">
+			<h2>Explore</h2>
+		</header>
+		<style>
+			.nav-tiles {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1.2em;
+				justify-content: center;
+				margin-top: 1em;
+			}
+			.nav-tile {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				background: #1a1a2e;
+				color: #ffffff;
+				border-radius: 8px;
+				padding: 1.5em 1.2em;
+				width: calc(25% - 1.2em);
+				min-width: 160px;
+				text-decoration: none;
+				transition: background 0.2s, transform 0.2s;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+			}
+			.nav-tile:hover {
+				background: #8b1a4a;
+				transform: translateY(-3px);
+				color: #ffffff;
+			}
+			.nav-tile .tile-icon { font-size: 1.8em; margin-bottom: 0.4em; }
+			.nav-tile .tile-title { font-weight: bold; font-size: 1em; margin-bottom: 0.3em; }
+			.nav-tile .tile-desc { font-size: 0.8em; opacity: 0.8; line-height: 1.4; }
+			@media (max-width: 768px) { .nav-tile { width: calc(50% - 1.2em); } }
+			@media (max-width: 480px) { .nav-tile { width: 100%; } }
+		</style>
+		<div class="nav-tiles">
+			<a href="arizona.html" class="nav-tile">
+				<div class="tile-icon">&#127760;</div>
+				<div class="tile-title">Current Work at LPL</div>
+				<div class="tile-desc">Atmospheric escape modeling for close-in exoplanets</div>
+			</a>
+			<a href="publications.html" class="nav-tile">
+				<div class="tile-icon">&#128196;</div>
+				<div class="tile-title">Publications</div>
+				<div class="tile-desc">Peer-reviewed journal articles</div>
+			</a>
+			<a href="outreach.html" class="nav-tile">
+				<div class="tile-icon">&#127775;</div>
+				<div class="tile-title">Outreach</div>
+				<div class="tile-desc">Mentorship, Girls Who STEM, and science education</div>
+			</a>
+			<a href="generic.html" class="nav-tile">
+				<div class="tile-icon">&#128161;</div>
+				<div class="tile-title">Past Research at NCSU</div>
+				<div class="tile-desc">Hydrodynamics of X-ray binaries with Dr. Blondin</div>
+			</a>
+			<a href="elements.html" class="nav-tile">
+				<div class="tile-icon">&#11088;</div>
+				<div class="tile-title">Past Research at NASA</div>
+				<div class="tile-desc">Stellar chromosphere modeling at NASA Goddard</div>
+			</a>
+			<a href="visual.html" class="nav-tile">
+				<div class="tile-icon">&#127909;</div>
+				<div class="tile-title">Visualizations &amp; Talks</div>
+				<div class="tile-desc">Conference presentations and scientific visualizations</div>
+			</a>
+			<a href="cv.html" class="nav-tile">
+				<div class="tile-icon">&#128203;</div>
+				<div class="tile-title">CV</div>
+				<div class="tile-desc">Full curriculum vitae with download link</div>
+			</a>
+		</div>
+	</div>
+</section>
+
 	<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
