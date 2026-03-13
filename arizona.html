@@ -12,6 +12,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/favicon.ico" />
+		<style>
+			/* Uniform plot boxes — same height, no cropping */
+			.plot-row .plot-box {
+				width: 100%;
+				padding-top: 75%; /* 4:3 aspect ratio */
+				position: relative;
+				overflow: hidden;
+				background: #fff;
+			}
+			.plot-row .plot-box img {
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+			.plot-row .col p {
+				margin-top: 0.4em;
+				margin-bottom: 0;
+				text-align: center;
+				font-size: 0.9em;
+			}
+		</style>
 	</head>
 	<body class="subpage">
 
@@ -65,16 +88,16 @@ likely metal- and molecule-rich sub-Neptune.
 
 <!-- HD 189733b -->
 <h4>HD 189733b</h4>
-<div class="flex flex-2">
+<div class="flex flex-2 plot-row">
     <div class="col align-center">
-        <div class="image square fit">
+        <div class="plot-box">
             <img src="images/hd189_tv.png"
                  alt="Temperature and velocity structure for HD 189733b" />
         </div>
         <p>Hydrodynamic structure: temperature and velocity vs. radius.</p>
     </div>
     <div class="col align-center">
-        <div class="image square fit">
+        <div class="plot-box">
             <img src="images/hd189_transit_he.png"
                  alt="Modeled He I 10830 Å transit spectrum for HD 189733b" />
         </div>
@@ -84,16 +107,16 @@ likely metal- and molecule-rich sub-Neptune.
 
 <!-- HD 209458b -->
 <h4>HD 209458b</h4>
-<div class="flex flex-2">
+<div class="flex flex-2 plot-row">
     <div class="col align-center">
-        <div class="image square fit">
+        <div class="plot-box">
             <img src="images/hd209_tv.png"
                  alt="Temperature and velocity structure for HD 209458b" />
         </div>
         <p>Hydrodynamic structure and mass-loss rate for HD&nbsp;209458b.</p>
     </div>
     <div class="col align-center">
-        <div class="image square fit">
+        <div class="plot-box">
             <img src="images/hd209_transit_he.png"
                  alt="Modeled He I 10830 Å transit spectrum for HD 209458b" />
         </div>
@@ -103,16 +126,16 @@ likely metal- and molecule-rich sub-Neptune.
 
 <!-- HD 149026b -->
 <h4>HD 149026b</h4>
-<div class="flex flex-2">
+<div class="flex flex-2 plot-row">
     <div class="col align-center">
-        <div class="image square fit">
+        <div class="plot-box">
             <img src="images/hd149_tv.png"
                  alt="Temperature and velocity structure for HD 149026b" />
         </div>
         <p>Hydrodynamic structure for the metal-rich hot Saturn HD&nbsp;149026b.</p>
     </div>
     <div class="col align-center">
-        <div class="image square fit">
+        <div class="plot-box">
             <img src="images/hd149_transit_he.png"
                  alt="Modeled He I 10830 Å transit spectrum for HD 149026b" />
         </div>
@@ -122,16 +145,16 @@ likely metal- and molecule-rich sub-Neptune.
 
 <!-- GJ 1214b -->
 <h4>GJ 1214b</h4>
-<div class="flex flex-2">
+<div class="flex flex-2 plot-row">
     <div class="col align-center">
-        <div class="image square fit">
+        <div class="plot-box">
             <img src="images/gj1214_mol_tv.png"
                  alt="Temperature and velocity structure for GJ 1214b" />
         </div>
         <p>Hydrodynamic structure for the warm sub-Neptune GJ&nbsp;1214b.</p>
     </div>
     <div class="col align-center">
-        <div class="image square fit">
+        <div class="plot-box">
             <img src="images/gj1214_he.png"
                  alt="Modeled He I 10830 Å transit spectrum for GJ 1214b" />
         </div>
@@ -158,21 +181,21 @@ likely metal- and molecule-rich sub-Neptune.
 								Each plot shows results for one parameter variation: increasing stellar activity, changing vertical mixing (eddy diffusion), and the 
 								inclusion of metals in the upper atmosphere.</p>
 								
-								<div class="flex flex-3">
+								<div class="flex flex-3 plot-row">
 									<div class="col align-center">
-										<div class="image square fit">
+										<div class="plot-box">
 											<img src="images/stellaratv.png" alt="Modeled helium transit depths as a function of stellar activity" />
 										</div>
 										<p>Variation with stellar activity</p>
 									</div>
 									<div class="col align-center">
-										<div class="image square fit">
+										<div class="plot-box">
 											<img src="images/kzz.png" alt="Modeled helium transit depths as a function of eddy diffusion" />
 										</div>
 										<p>Variation with eddy diffusion</p>
 									</div>
 									<div class="col align-center">
-										<div class="image square fit">
+										<div class="plot-box">
 											<img src="images/metaltd.png" alt="Modeled helium transit depths including metals" />
 										</div>
 										<p>Effect of including metals</p>
