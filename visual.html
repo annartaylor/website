@@ -12,6 +12,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/favicon.ico" />
+		<style>
+			/* Make all conference presentation media the same size */
+			.conference-row .media-box {
+				position: relative;
+				width: 100%;
+				padding-top: 56.25%; /* 16:9 aspect ratio */
+				overflow: hidden;
+				background: #000;
+			}
+			.conference-row .media-box img,
+			.conference-row .media-box iframe {
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border: 0;
+			}
+		</style>
 	</head>
 	<body class="subpage">
 
@@ -58,11 +77,11 @@ In addition to creating visualizations, I present my research regularly at profe
 Here are a few recent conference appearances related to my multi-planet atmospheric escape work.
 </p>
 
-<div class="flex flex-3">
+<div class="flex flex-3 conference-row">
     <!-- ExoClimes poster -->
     <div class="col col3 first">
         <p><b>ExoClimes</b> – Poster on my multi-species atmospheric escape model with excited hydrogen and helium.</p>
-        <div class="image square fit">
+        <div class="media-box">
             <img src="images/exoclimes_poster.jpg"
                  alt="Anna Taylor presenting her HD 209458b escape model poster at ExoClimes" />
         </div>
@@ -71,7 +90,7 @@ Here are a few recent conference appearances related to my multi-planet atmosphe
     <!-- DPS talk -->
     <div class="col col3">
         <p><b>DPS/EPSC</b> – Oral presentation on coupling lower/middle atmosphere models to a 1D hydrodynamic escape code.</p>
-        <div class="image square fit">
+        <div class="media-box">
             <img src="images/dps_talk.jpg"
                  alt="Anna Taylor giving a DPS/EPSC talk on her atmospheric escape model" />
         </div>
@@ -80,15 +99,15 @@ Here are a few recent conference appearances related to my multi-planet atmosphe
     <!-- AER workshop -->
     <div class="col col3">
         <p><b>AER Workshop</b> – Talk introducing a proposed scaling relation for He&nbsp;I equivalent width across four exoplanets.</p>
-        <div class="video-container">
-			<iframe
-			  src="https://www.youtube.com/embed/RF3B-gjVgZo"
-			  title="AER Workshop talk by Anna Taylor"
-			  frameborder="0"
-			  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			  allowfullscreen>
-			</iframe>
-		  </div>
+        <div class="media-box">
+            <iframe
+              src="https://www.youtube.com/embed/RF3B-gjVgZo"
+              title="AER Workshop talk by Anna Taylor"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+        </div>
     </div>
 </div>
 
