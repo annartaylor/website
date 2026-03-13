@@ -13,16 +13,16 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/favicon.ico" />
 		<style>
-			/* Make all conference presentation media the same size */
-			.conference-row .media-box {
+			/* Uniform media boxes for all rows */
+			.media-row .media-box {
 				position: relative;
 				width: 100%;
 				padding-top: 56.25%; /* 16:9 aspect ratio */
 				overflow: hidden;
 				background: #000;
 			}
-			.conference-row .media-box img,
-			.conference-row .media-box iframe {
+			.media-row .media-box img,
+			.media-row .media-box iframe {
 				position: absolute;
 				top: 0; left: 0;
 				width: 100%;
@@ -30,13 +30,17 @@
 				object-fit: cover;
 				border: 0;
 			}
+			/* Tighten gap between caption and image */
+			.media-row .col p {
+				margin-bottom: 0.4em;
+			}
 		</style>
 	</head>
 	<body class="subpage">
 
 		<!-- Header -->
 			<header id="header">
-				
+
 				<a href="#menu">Menu</a>
 			</header>
 
@@ -52,7 +56,7 @@
 				<li><a href="cv.html">CV</a></li>
 			</ul>
 		</nav>
-	
+
 
 		<!-- Main -->
 			<div id="main">
@@ -63,13 +67,6 @@
 							<header class="align-center">
 								<h1>Visualizations and Presentations</h1>
 							</header>
-							<div class="flex flex-2">
-								<div class="col col2">
-								
-                    </div>
-                    
-								
-</div>
 
 <h3>Recent Conference Presentations</h3>
 <p>
@@ -77,8 +74,7 @@ In addition to creating visualizations, I present my research regularly at profe
 Here are a few recent conference appearances related to my multi-planet atmospheric escape work.
 </p>
 
-<div class="flex flex-3 conference-row">
-    <!-- ExoClimes poster -->
+<div class="flex flex-3 media-row">
     <div class="col col3 first">
         <p><b>ExoClimes</b> – Poster on my multi-species atmospheric escape model with excited hydrogen and helium.</p>
         <div class="media-box">
@@ -86,8 +82,6 @@ Here are a few recent conference appearances related to my multi-planet atmosphe
                  alt="Anna Taylor presenting her HD 209458b escape model poster at ExoClimes" />
         </div>
     </div>
-
-    <!-- DPS talk -->
     <div class="col col3">
         <p><b>DPS/EPSC</b> – Oral presentation on coupling lower/middle atmosphere models to a 1D hydrodynamic escape code.</p>
         <div class="media-box">
@@ -95,8 +89,6 @@ Here are a few recent conference appearances related to my multi-planet atmosphe
                  alt="Anna Taylor giving a DPS/EPSC talk on her atmospheric escape model" />
         </div>
     </div>
-
-    <!-- AER workshop -->
     <div class="col col3">
         <p><b>AER Workshop</b> – Talk introducing models for He&nbsp;I equivalent width across four exoplanets.</p>
         <div class="media-box">
@@ -111,89 +103,74 @@ Here are a few recent conference appearances related to my multi-planet atmosphe
     </div>
 </div>
 
-<p>I had the incredible opportunity to present my research at the Exoplanets 5 conference in Leiden, Netherlands! My presentation focused on "Assessment of He I triplet absorption at 10830 Å in escaping atmospheres 
-	of hot gaseous exoplanets," with a detailed case study on HD209458b. Exploring the mysteries of exoplanetary atmospheres and has been a thrilling journey, and it was an honor to share my findings with such a distinguished 
-	group of scientists and researchers. </p>
-                                                                <div class="col col3 first">
-                                                                        <div class="image square fit">
-                                                                                <a href="generic.html" class="link"><img src="images/exo5.png" alt="" /></a>
-
-
-                </div>
+<!-- Row 1 -->
+<div class="flex flex-3 media-row">
+    <div class="col col3 first">
+        <p>Presenting at Exoplanets 5 in Leiden, Netherlands — case study on HD209458b He&nbsp;I absorption.</p>
+        <div class="media-box">
+            <a href="generic.html" class="link"><img src="images/exo5.png" alt="Anna Taylor at Exoplanets 5" /></a>
         </div>
-
-<p> Me presenting my research with NCSU's Dr. John Blondin and NASA Goddard in honor of being presented with the NCSU Physics Department's McCormick Undergraduate Research Award. </p>
-                                                                <div class="col col3 first">
-                                                                        <div class="image square fit">
-                                                                                <a href="generic.html" class="link"><img src="images/mccormick.png" alt="" /></a>
-
-
-                </div>
+    </div>
+    <div class="col col3">
+        <p>Presenting with Dr. John Blondin and NASA Goddard upon receiving the NCSU McCormick Undergraduate Research Award.</p>
+        <div class="media-box">
+            <a href="generic.html" class="link"><img src="images/mccormick.png" alt="McCormick Award presentation" /></a>
         </div>
-
-<p> Me presenting my stellar chromosphere research at my very first American Astronomical Society Meeting! </p>
-		<div class="col col3 first">
-			<div class="image square fit">
-				<a href="generic.html" class="link"><img src="images/AAS.jpg" alt="" /></a>
-
-			
-</div>
+    </div>
+    <div class="col col3">
+        <p>Presenting stellar chromosphere research at my first American Astronomical Society Meeting.</p>
+        <div class="media-box">
+            <a href="generic.html" class="link"><img src="images/AAS.jpg" alt="Anna Taylor at AAS" /></a>
+        </div>
+    </div>
 </div>
 
-
-
-<p> This gif is a visualization Andrew Igdal and I did for the NC State Libraries Vizualization contest of the black hole binary M33 X-7. We won in our category!</p>
-								<div class="col col3 first">
-									<div class="image square fit">
-										<a href="generic.html" class="link"><img src="images/Graphics-Taylor.gif" alt="" /></a>
-                                        
-                                        </div>
-                                        </div>
-
-
-<p> This image is a visualization Andrew Igdal and I did for a friend of Dr. Blondin from University of Virgina. This a reprsentation of one of the Draco binary systems. </p>
-								<div class="col col3 first">
-									<div class="image square fit">
-										<a href="generic.html" class="link"><img src="images/test5.png" alt="" /></a>
-
-									
-		</div>
+<!-- Row 2 -->
+<div class="flex flex-3 media-row">
+    <div class="col col3 first">
+        <p>Visualization of the black hole binary M33 X-7 for the NC State Libraries contest — won our category!</p>
+        <div class="media-box">
+            <a href="generic.html" class="link"><img src="images/Graphics-Taylor.gif" alt="M33 X-7 visualization" /></a>
         </div>
-<p> This is me presenting a research poster I made at the NCSU Undergradute Research Symposium in April 2022. </p>
-								<div class="col col3 first">
-									<div class="image square fit">
-										<a href="generic.html" class="link"><img src="images/poster.jpg" alt="" /></a>
-
-									
-		</div>
+    </div>
+    <div class="col col3">
+        <p>Visualization of a Draco binary system, made for a collaborator of Dr. Blondin at University of Virginia.</p>
+        <div class="media-box">
+            <a href="generic.html" class="link"><img src="images/test5.png" alt="Draco binary visualization" /></a>
         </div>
-       
+    </div>
+    <div class="col col3">
+        <p>Presenting a research poster at the NCSU Undergraduate Research Symposium, April 2022.</p>
+        <div class="media-box">
+            <a href="generic.html" class="link"><img src="images/poster.jpg" alt="NCSU Undergraduate Research Symposium poster" /></a>
+        </div>
+    </div>
+</div>
 
-<p> This gif is a visualization Andrew Igdal and I did for Dr. Stephen Reynolds. This a representation of an evolved supernova remnant. </p>
-								<div class="col col3 first">
-									<div class="image square fit">
-										<a href="generic.html" class="link"><img src="images/spinner.gif" alt="" /></a>
-                                        
-                                        </div>
-                                        </div>
-       
-        
+<!-- Row 3 -->
+<div class="flex flex-3 media-row">
+    <div class="col col3 first">
+        <p>Visualization of an evolved supernova remnant, made for Dr. Stephen Reynolds.</p>
+        <div class="media-box">
+            <a href="generic.html" class="link"><img src="images/spinner.gif" alt="Supernova remnant visualization" /></a>
+        </div>
+    </div>
+    <div class="col col3"></div>
+    <div class="col col3"></div>
+</div>
 
-       
+						</div>
+					</section>
 
-        
+	</div>
 
-
-
-				
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
