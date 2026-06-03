@@ -31,6 +31,32 @@
 			.pub-list li a:hover {
 				color: #c2185b;
 			}
+			.abstract-toggle {
+				display: inline-block;
+				margin-top: 0.4em;
+				font-size: 0.85em;
+				color: #c2185b;
+				cursor: pointer;
+				background: none;
+				border: none;
+				padding: 0;
+				text-decoration: underline;
+				font-family: inherit;
+			}
+			.abstract-toggle:hover {
+				color: #8b1a4a;
+			}
+			.abstract-body {
+				display: none;
+				margin-top: 0.6em;
+				font-size: 0.92em;
+				line-height: 1.7;
+				color: #555;
+				background: #f9f9f9;
+				border-left: 3px solid #e0e0e0;
+				padding: 0.7em 1em;
+				border-radius: 0 4px 4px 0;
+			}
 		</style>
 	</head>
 	<body class="subpage">
@@ -71,21 +97,27 @@
 								<b>Taylor, A. R.</b>, Koskinen, T., Huang, C., Arfaux, A., &amp; Lavvas, P. 2026,
 								<i>ApJ</i>, 999, 214,
 								"Helium Escape in Context: Comparative Signatures of Four Close-in Exoplanets"<br/>
-								<a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae41b5" target="_blank">doi:10.3847/1538-4357/ae41b5</a>
+								<a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae41b5" target="_blank">doi:10.3847/1538-4357/ae41b5</a><br/>
+								<button class="abstract-toggle" onclick="toggleAbstract(this)">▶ Show abstract</button>
+								<div class="abstract-body">Observations of escaping atmospheres on close-in exoplanets show a wide range in the strength and morphology of He&nbsp;I 10830&nbsp;Å and H&nbsp;I absorption. We employ a 1D hydrodynamic modeling framework to investigate four systems — HD&nbsp;209458b, HD&nbsp;189733b, HD&nbsp;149026b, and GJ&nbsp;1214b — and examine how stellar activity, diffusive separation, eddy diffusion, metallicity, and molecular chemistry shape their escape signatures. For HD&nbsp;209458b, our model reproduces the observed helium and hydrogen transit depths without invoking subsolar helium abundances, as diffusive separation naturally accounts for the modest absorption. HD&nbsp;189733b requires approximately 12&nbsp;km&nbsp;s⁻¹ of nonthermal broadening to match observed line widths despite comparable helium depths. The high surface gravity of HD&nbsp;149026b suppresses escape and enhances diffusive separation, yielding extremely weak He&nbsp;I absorption consistent with its nondetection. For GJ&nbsp;1214b, including molecular hydrogen substantially reduces predicted helium signatures relative to H/He-only models. Together, these results demonstrate that interpreting He&nbsp;I and H&alpha; absorption requires first-principles models that include self-consistent temperature and velocity profiles, multispecies transport, and molecular chemistry.</div>
 							</li>
 
 							<li>
 								<b>Taylor, A. R.</b>, Koskinen, T., Argenti, L., Lewis, N., Huang, C., Arfaux, A., &amp; Lavvas, P. 2025,
 								<i>ApJ</i>,
 								"A Multi-Species Atmospheric Escape Model with Excited Hydrogen and Helium: Application to HD&nbsp;209458b"<br/>
-								<a href="https://iopscience.iop.org/article/10.3847/1538-4357/ade3c9" target="_blank">doi:10.3847/1538-4357/ade3c9</a>
+								<a href="https://iopscience.iop.org/article/10.3847/1538-4357/ade3c9" target="_blank">doi:10.3847/1538-4357/ade3c9</a><br/>
+								<button class="abstract-toggle" onclick="toggleAbstract(this)">▶ Show abstract</button>
+								<div class="abstract-body">We present a comprehensive multispecies atmospheric escape model for HD&nbsp;209458b that incorporates excited hydrogen and metastable helium. Our coupled models span from the lower atmosphere through the exosphere and include updated excitation rates and self-consistent treatment of diffusive separation. The model reproduces the observed He&nbsp;I 10830&nbsp;Å and H&alpha; absorption features, finding that strong diffusive separation is required to explain the relatively weak helium signal from this archetypal hot Jupiter. A photoelectron heating efficiency of 20%–40% corresponds to mass-loss rates of 1.9–3 &times; 10¹⁰ g&nbsp;s⁻¹. We find that helium absorption is sensitive to both stellar activity and diffusion, while H&alpha; absorption is relatively insensitive owing to its dependence on Ly&alpha; excitation. These results suggest that multiple competing processes — beyond simple XUV flux scaling — control He&nbsp;I 10830&nbsp;Å transit depths, and that combined observations of helium, H&alpha;, and stellar activity indicators provide powerful constraints on upper-atmosphere dynamics and composition.</div>
 							</li>
 
 							<li>
 								<b>Taylor, A. R.</b>, Dunn, A., Peacock, S., Youngblood, A., &amp; Redfield, S. 2024,
 								<i>ApJ</i>, 964, 80,
 								"Correlating Intrinsic Stellar Parameters with Mg&nbsp;II Self-reversal Depths"<br/>
-								<a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad22da" target="_blank">doi:10.3847/1538-4357/ad22da</a>
+								<a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad22da" target="_blank">doi:10.3847/1538-4357/ad22da</a><br/>
+								<button class="abstract-toggle" onclick="toggleAbstract(this)">▶ Show abstract</button>
+								<div class="abstract-body">The Mg&nbsp;II h&amp;k emission lines are powerful diagnostics of stellar chromospheres and transition regions. Their cores commonly exhibit self-reversals — intensity dips arising from non-LTE effects — whose depths vary across stars of different types and activity levels. We examine a sample of 135 FGKM main-sequence stars with high-resolution near-ultraviolet spectra from the Hubble Space Telescope, using the PHOENIX atmosphere code to derive self-consistent stellar parameters (effective temperature, surface gravity, metallicity, mass, radius, and age) guided by archival photometry. We model the observed Mg&nbsp;II k profiles to isolate intrinsic self-reversal depths from interstellar medium attenuation. We find weak but significant correlations between self-reversal depth and stellar age, rotation period, Mg&nbsp;II luminosity, temperature, and mass. All stars older than ~2&nbsp;Gyr or rotating slower than ~10&nbsp;days exhibit self-reversals, while younger, rapidly rotating stars — indicators of higher magnetic activity — are more likely to lack deep reversals. Cooler stars consistently display self-reversals regardless of age, suggesting that magnetic activity is the dominant factor shaping self-reversal morphology.</div>
 							</li>
 
 						</ol>
@@ -93,6 +125,15 @@
 					</div>
 				</section>
 			</div>
+
+	<script>
+		function toggleAbstract(btn) {
+			var abstract = btn.nextElementSibling;
+			var isOpen = abstract.style.display === 'block';
+			abstract.style.display = isOpen ? 'none' : 'block';
+			btn.textContent = isOpen ? '▶ Show abstract' : '▼ Hide abstract';
+		}
+	</script>
 
 	<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
